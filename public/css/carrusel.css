@@ -1,0 +1,36 @@
+.c-carrusel{
+    width: 100%;
+}
+
+.carrusel {
+    position: relative;
+    width: 100%; 
+    margin: auto; 
+    overflow: hidden;
+    background-color: #F90B2C;
+    padding: 3rem;
+}
+
+.carrusel-contenido {
+    display: flex; 
+    transition: transform 0.5s ease-in-out; 
+}
+
+.slide {
+    flex: 0 0 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.slide img {
+    width: auto; 
+}
+
+/* Media Querys Carrusel */
+
+@media(max-width: 1600px){
+/*     .c-carrusel{
+        padding-inline: 20rem;
+    } */
+}

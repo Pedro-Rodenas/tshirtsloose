@@ -1,0 +1,141 @@
+/* Estilo del carrito */
+.c-cart {
+    margin-left: auto;
+    padding: 0 1rem;
+}
+
+.c-cart button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.4rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.c-cart button:hover {
+    color: #F90B2C;
+}
+
+/* Estilos del Modal */
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+}
+
+/* Estilo de la "X" de cierre */
+.close {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #F90B2C;
+}
+
+/* Botón de checkout */
+.checkout-btn {
+    background-color: #F90B2C;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+}
+
+.checkout-btn:hover {
+    background-color: #D40A29;
+}
+
+/* Estilos para la cantidad y los botones */
+.quantity-container {
+    align-items: center;
+    gap: 1rem; 
+    margin: 1rem 0;
+}
+
+.quantity-container button {
+    background-color: #F90B2C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quantity-container button:hover,
+button.add-to-cart:hover {
+    background-color: #D40A29;
+    transform: scale(1.05);
+}
+
+/* Estilo de la cantidad */
+.quantity-container span.quantity {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Lista de productos en el carrito */
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#cart-items li {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items li span {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#cart-items li button {
+    background-color: #F90B2C;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}

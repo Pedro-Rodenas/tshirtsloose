@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/img/productos/polos-prueba.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>I love you | Pe causa</title>
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/carrusel.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/carrito.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="c-header">
+                <div class="c-logo">
+                    <img class="logo" src="public/img/productos/polos-prueba.png" alt="Logo">
+                </div>
+                <ul class="nav-list">
+                    <a href="index.html">Inicio</a>
+                    <a href="pages/promociones.html">Promociones</a>
+                    <a href="pages/personalizado.html">Personalizado</a>
+                    <a href="pages/contacto.html">Contacto</a>
+                </ul>
+                <div class="c-cart">
+                    <button id="openCartModal" aria-label="Abrir carrito">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i> <!-- Icono de hamburguesa -->
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <div class="c-carrusel">
+            <div class="carrusel">
+                <div class="carrusel-contenido">
+                    <div class="slide"><img src="public/img/productos/polos-prueba.png" alt="Imagen 1"></div>
+                    <div class="slide"><img src="public/img/productos/polos-prueba.png" alt="Imagen 2"></div>
+                    <div class="slide"><img src="public/img/productos/polos-prueba.png" alt="Imagen 3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-detalles">
+
+            <div class="detalle">
+                <h3>Envíos Seguros</h3>
+                <p>Procesamos tras recibir pago.</p>
+            </div>
+
+            <div class="detalle">
+                <h3>Devoluciones en 48h</h3>
+                <p>Desde el momento entregado.</p>
+            </div>
+
+            <div class="detalle">
+                <h3>Asesoramiento Experto</h3>
+                <p>Resolvemos todas tus dudas.</p>
+            </div>
+
+        </div>
+
+        <div class="c-p-productos">
+            <h2>Productos destacados</h2>
+            <div class="c-productos">
+                <div class="productos">
+                    <img src="public/img/productos/polos-prueba.png" alt="" class="product-image-new">
+                    <h3>Psicologa Loca</h3>
+                    <p>Polo overside - Frase Adicional</p>
+                    <div class="quantity-container">
+                        <button onclick="decreaseQuantity('producto1')">-</button>
+                        <span id="quantity-producto1" class="quantity">1</span>
+                        <button onclick="increaseQuantity('producto1')">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Polo Psicologa ', 30, 'producto1')">Añadir
+                        Producto</button>
+                </div>
+
+                <div class="productos">
+                    <img src="public/img/productos/polos-prueba.png" alt="" class="product-image-new">
+                    <h3>Arquitecta Inestable</h3>
+                    <p>Polo overside - Frase Adicional</p>
+                    <div class="quantity-container">
+                        <button onclick="decreaseQuantity('producto2')">-</button>
+                        <span id="quantity-producto2" class="quantity">1</span>
+                        <button onclick="increaseQuantity('producto2')">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Polo Arquitecta', 30, 'producto2')">Añadir
+                        Producto</button>
+                </div>
+
+                <div class="productos">
+                    <img src="public/img/productos/polos-prueba.png" alt="" class="product-image-new">
+                    <h3>Enfermera enferma</h3>
+                    <p>Polo overside - Frase Adicional</p>
+                    <div class="quantity-container">
+                        <button onclick="decreaseQuantity('producto3')">-</button>
+                        <span id="quantity-producto3" class="quantity">1</span>
+                        <button onclick="increaseQuantity('producto3')">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Polo Enfermera', 30, 'producto3')">Añadir
+                        Producto</button>
+                </div>
+
+                <div class="productos">
+                    <img src="public/img/productos/polos-prueba.png" alt="" class="product-image-new">
+                    <h3>Profesora Analfabeta</h3>
+                    <p>Polo overside - Frase Adicional</p>
+                    <div class="quantity-container">
+                        <button onclick="decreaseQuantity('producto4')">-</button>
+                        <span id="quantity-producto3" class="quantity">1</span>
+                        <button onclick="increaseQuantity('producto4')">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Polo Profesora', 30, 'producto4')">Añadir
+                        Producto</button>
+                </div>
+
+                <div class="productos">
+                    <img src="public/img/productos/polos-prueba.png" alt="" class="product-image-new">
+                    <h3>Barbero Mediocre</h3>
+                    <p>Polo overside - Frase Adicional</p>
+                    <div class="quantity-container">
+                        <button onclick="decreaseQuantity('producto5')">-</button>
+                        <span id="quantity-producto3" class="quantity">1</span>
+                        <button onclick="increaseQuantity('producto5')">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Polo Barbero', 30, 'producto5')">Añadir
+                        Producto</button>
+                </div>
+
+                <div class="productos">
+                    <img src="public/img/productos/polos-prueba.png" alt="" class="product-image-new">
+                    <h3>Ingeniero Gil</h3>
+                    <p>Polo overside - Frase Adicional</p>
+                    <div class="quantity-container">
+                        <button onclick="decreaseQuantity('producto6')">-</button>
+                        <span id="quantity-producto3" class="quantity">1</span>
+                        <button onclick="increaseQuantity('producto6')">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Polo Ingeniero', 30, 'producto6')">Añadir
+                        Producto</button>
+                </div>
+
+                <!-- Otros productos -->
+            </div>
+        </div>
+
+
+        <div class="c-pedir-entrega">
+            <h2>Pedidos y Entregas</h2>
+            <p>¿Cómo funciona?</p>
+            <div class="como">
+                <div class="pedir">
+                    <h3>¿Cómo hacer un pedido?</h3>
+                    <p>Para poder realizar un pedido, simplemente sigue estos pasos sencillos:</p>
+                    <p>1. Selecciona los productos que deseas comprar de nuestro catálogo online.</p>
+                    <p>2. Añádelos a tu carrito de compras y revisa tu pedido.</p>
+                    <p>3. Procede al pago de forma segura con trato directo.</p>
+                    <p>4. Recibirás un mensaje de confirmación.</p>
+                </div>
+
+                <div class="entrega">
+                    <h3>¿Cómo se entregará?</h3>
+                    <p>El proceso de entrega se realiza de manera rápida y eficiente, tan pronto como se confirme el
+                        pago. Los pasos incluyen:</p>
+                    <p>1. Una vez recibido el pago, tu pedido será preparado para el envío.</p>
+                    <p>2. Utilizamos servicios de mensajería confiables para garantizar que recibas tus productos a
+                        tiempo.</p>
+                    <p>3. Recibirás una notificación con los detalles del envío y el tiempo estimado de entrega.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="c-footer">
+        <div class="footer-info">
+            <h4>Información</h4>
+            <p><i class="fas fa-envelope"></i> Tshirtsloose@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> 908 621 582</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Enlaces</h4>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Contacto</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@loose.tshirts?_t=8rYdPRT5wsp&_r=1"><i
+                    class="fab fa-tiktok"></i></a>
+        </div>
+
+        <div class="footer-copy">
+            <p>© 2024 Tshirtsloose. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu carrito</h2>
+            <ul id="cart-items"></ul>
+            <button class="checkout-btn" onclick="sendToWhatsApp()">Ir a Pagar</button>
+        </div>
+    </div>
+
+</body>
+<script src="public/js/responsive-header.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="public/js/carrusel.js"></script>
+<script src="public/js/añadir-carrito.js"></script>
+
+</html>
